@@ -7,3 +7,5 @@ aiofiles == 25.1.0
 langchain == 1.0.8
 pypdf == 6.3.0
 langchain-community == 0.4.1
+langchain-text-splitters == 1.0.0
+motor == 3.7.1
