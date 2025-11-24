@@ -1,11 +1,11 @@
 from pydantic import Field, field_validator
-from MongoModel import MongoModel
+from schemas.db.BaseSchema import BaseSchema
 from bson.objectid import ObjectId
 from typing import Optional
 
 
-class ProjectModel(MongoModel):
-    _id: Optional[ObjectId] = None
+class ProjectSchema(BaseSchema):
+    id: Optional[ObjectId] = Field(None, alias="_id")
     project_id: str = Field(..., min_length=1)
 
     @field_validator("project_id")

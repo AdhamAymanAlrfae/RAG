@@ -1,2 +1,2 @@
-from .DataChunk import DataChunkModel
-from .Project import ProjectModel
+from .DataChunkSchema import DataChunkSchema
+from .ProjectSchema import ProjectSchema

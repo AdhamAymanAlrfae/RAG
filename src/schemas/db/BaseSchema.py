@@ -1,7 +1,7 @@
 from pydantic import BaseModel, ConfigDict
 
 
-class MongoModel(BaseModel):
+class BaseSchema(BaseModel):
     model_config = ConfigDict(
         arbitrary_types_allowed=True,
     )
